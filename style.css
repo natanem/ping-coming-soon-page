@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+:root{
+    --clr-primary: hsl(223, 87%, 63%);
+    --clr-secondary: hsl(223, 100%, 88%);
+    --clr-red: hsl(354, 100%, 66%);
+    --clr-gray: hsl(0, 0%, 59%);
+    --clr-dark-blue: hsl(209, 33%, 12%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1.25rem;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    max-width: 44.5rem;
+    height: 100%;
+    margin: auto;
+    padding: 5.25rem 2.25rem;
+
+    text-align: center;
+}
+header{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 79px;
+    height: 43px;
+    margin: auto;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--clr-gray);
+    margin: 1.5rem 0;
+}
+h1 strong{
+    font-weight: 700;
+    color: var(--clr-dark-blue);
+}
+p{
+    margin-bottom: 2.25rem;
+}
+
+
+form{
+    width: 39.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5.875rem;
+}
+form > *:focus{
+    outline: none;
+}
+form input{
+    padding: 1.25rem 2rem;
+    flex: 1;
+    border-radius: 1.75rem;
+    border: 1px solid var(--clr-secondary);
+    margin-right: 1rem;
+}
+form ::-webkit-input-placeholder{
+    color: var(--clr-secondary);
+}
+form button{
+    width: 12.5rem;
+    border: none;
+    padding: 1.25rem 2rem;
+    border-radius: 1.75rem;
+    background: var(--clr-primary);
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 5px 10px rgba(76, 123, 243, 0.23);
+}
+
+.image{
+    width: 40rem;
+    height: 23.93rem;
+    margin-bottom: 4.56rem;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
+footer .social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.social-media i{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    background: #fff;
+    color: var(--clr-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.875rem;
+    border: 1px solid var(--clr-gray);
+    font-size: 1.2rem;
+}
+
+.container footer .copyright{
+    font-size: 0.75rem;
+    margin-top: 1.18rem;
+    color: var(--clr-gray);
+}
+
+
+@media screen and (max-width: 600px){
+    .container{
+        width: 100%;
+        text-align: center;
+        padding: 5rem 1.81rem 2.56rem;
+        margin: 0;
+    }
+    header{
+        width: 100%;
+    }
+    header .logo{
+        width: 50px;
+        height: 27px;
+    }
+    header .logo img{
+        width: 100%;
+        height: 100%;
+    }
+    header h1{
+        font-size: 1.375rem;
+        margin: 2rem 0 1rem;
+    }
+    header  p{
+        font-size: 0.75rem;
+        margin-bottom: 1rem;
+    }
+    form{
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0.62rem 0;
+        margin-bottom: 4rem;
+        padding: 1rem;
+    }
+    form input{
+        width: 100%;
+        padding: .75rem 2rem;
+    }
+    form button{
+        width: 100%;
+        padding: .75rem 2rem;
+    }
+
+    .image{
+        width: 100%;
+        height: 11.99rem;
+        margin-bottom: 5rem;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+       object-fit: cover;
+    }
+}
